@@ -21,8 +21,10 @@ public class Monkey {
     }
 
     protected void executeTricks() {
-        for (Trick trick : tricks) {
-            notifyObservers(trick);
+        if (tricks != null) {
+            for (Trick trick : tricks) {
+                notifyObservers(trick);
+            }
         }
     }
 
@@ -51,8 +53,10 @@ public class Monkey {
     }
 
     private void notifyObservers(final Trick trick) {
-        for (TrickObserver observer : trickObservers) {
-            observer.reactToTrick(trick, this.getName());
+        if (trickObservers != null) {
+            for (TrickObserver observer : trickObservers) {
+                observer.reactToTrick(trick, this.getName());
+            }
         }
     }
 }
