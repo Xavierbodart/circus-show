@@ -1,10 +1,8 @@
 package model.spectator;
 
-import model.artist.Monkey;
 import model.trick.AcrobaticTrick;
 import model.trick.MusicalTrick;
 import model.trick.Trick;
-import model.trick.TrickObserver;
 
 public class Spectator implements TrickObserver {
     private String name;

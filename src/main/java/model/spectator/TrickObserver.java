@@ -1,4 +1,6 @@
-package model.trick;
+package model.spectator;
+
+import model.trick.Trick;
 
 public interface TrickObserver {
 

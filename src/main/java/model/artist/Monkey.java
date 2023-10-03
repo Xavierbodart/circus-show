@@ -1,7 +1,7 @@
 package model.artist;
 
+import model.spectator.TrickObserver;
 import model.trick.Trick;
-import model.trick.TrickObserver;
 
 import java.util.ArrayList;
 import java.util.List;
