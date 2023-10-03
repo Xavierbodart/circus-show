@@ -14,7 +14,7 @@ import java.io.PrintStream;
 public class ApplicationTests {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-    //Redirect output stream to
+    //Redirect standard output stream to a local one
     @Before
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
